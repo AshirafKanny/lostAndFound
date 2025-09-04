@@ -1,0 +1,15 @@
+{
+  "name": "lost-and-found-website",
+  "version": "1.0.0",
+  "description": "A website for reporting and finding lost and found items.",
+  "main": "src/js/main.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

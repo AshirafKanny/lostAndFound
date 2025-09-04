@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Item</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Include header component -->
+        <div id="header-placeholder"></div>
+    </header>
+    <nav>
+        <!-- Include menu component -->
+        <div id="menu-placeholder"></div>
+    </nav>
+    <main>
+        <h1>Report Lost or Found Item</h1>
+        <form id="report-form">
+            <label for="item-name">Item Name:</label>
+            <input type="text" id="item-name" name="item-name" required>
+
+            <label for="item-description">Description:</label>
+            <textarea id="item-description" name="item-description" required></textarea>
+
+            <label for="item-date">Date Lost/Found:</label>
+            <input type="date" id="item-date" name="item-date" required>
+
+            <label for="owner-address">Owner Address:</label>
+            <input type="text" id="owner-address" name="owner-address" required>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </main>
+    <footer>
+        <!-- Include footer component -->
+        <div id="footer-placeholder"></div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/components/forms.js"></script>
+</body>
+</html>

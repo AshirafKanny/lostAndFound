@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Include header content -->
+        <div id="header"></div>
+    </header>
+    
+    <nav>
+        <!-- Include menu content -->
+        <div id="menu"></div>
+    </nav>
+
+    <main>
+        <h1>Welcome to the Lost and Found Website</h1>
+        <p>Use the menu to navigate through lost and found items.</p>
+    </main>
+
+    <footer>
+        <!-- Include footer content -->
+        <div id="footer"></div>
+    </footer>
+
+    <script>
+        // Load header and footer content
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('components/menu.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('menu').innerHTML = data);
+
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found - Home</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Include header component -->
+        <div id="header"></div>
+    </header>
+    
+    <nav>
+        <!-- Include menu component -->
+        <div id="menu"></div>
+    </nav>
+
+    <main>
+        <h1>Welcome to the Lost and Found Service</h1>
+        <p>Our platform helps you report and find lost items. Use the menu to navigate through the sections.</p>
+        <section>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="lost-items.html">View Lost Items</a></li>
+                <li><a href="found-items.html">View Found Items</a></li>
+                <li><a href="report-item.html">Report an Item</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Include footer component -->
+        <div id="footer"></div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Load header and footer components
+        document.getElementById('header').innerHTML = '<!-- Header content goes here -->';
+        document.getElementById('footer').innerHTML = '<!-- Footer content goes here -->';
+        
+        // Load menu component
+        import { loadMenu } from '../js/components/menu.js';
+        loadMenu();
+    </script>
+</body>
+</html>
