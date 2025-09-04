@@ -8,7 +8,7 @@
     "build": "echo 'Build step not defined'",
     "test": "echo 'No tests defined'"
   },
-  "author": "Your Name",
+  "author": "Ashiraf Kenny",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {}
